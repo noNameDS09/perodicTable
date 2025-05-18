@@ -8,7 +8,6 @@ A modern, interactive, and highly functional Periodic Table web application buil
 
 ### 🌐 Smooth Navigation & Responsive Design
 - Fluid and intuitive layout with seamless transitions between views.
-- Fully responsive: optimized for desktop, tablet, and mobile screens.
 - Dynamic rearrangement of elements based on filtering and sorting.
 
 ### 🧠 AI-Powered Element Identification
@@ -18,7 +17,6 @@ A modern, interactive, and highly functional Periodic Table web application buil
 - Real-time filtering based on:
   - Atomic number, group, period
   - Density, electronegativity, melting point, and more
-- Smart search with autocomplete to quickly locate elements.
 
 ### 🖱️ Interactive Hover Info
 - Hover over an element to view:
@@ -41,8 +39,7 @@ A modern, interactive, and highly functional Periodic Table web application buil
 ### ❤️ Additional Features
 - Save favorite elements and custom filter sets.
 - Animations and transitions enhance overall UX.
-- Future-ready: easy to integrate real-time scientific data updates.
-
+- 
 ---
 
 ## 🛠️ Built With
