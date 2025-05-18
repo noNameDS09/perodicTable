@@ -28,7 +28,7 @@ export function PeriodicTable({ elements, filters }: PeriodicTableProps) {
         className="grid gap-1 sm:gap-1.5"
         style={{
           gridTemplateColumns: 'repeat(18, minmax(0, 1fr))',
-          gridTemplateRows: 'repeat(10, minmax(0, auto))', // 7 main + 2 f-block + 1 placeholder
+          gridTemplateRows: 'repeat(10, minmax(0, auto))', 
         }}
         aria-label="Periodic Table of Elements"
       >
@@ -40,7 +40,6 @@ export function PeriodicTable({ elements, filters }: PeriodicTableProps) {
           />
         ))}
       </div>
-       {/* Legend (Optional - can be expanded) */}
        <div className="mt-6 p-4 bg-card rounded-lg shadow">
         <h3 className="text-lg font-semibold mb-2">Legend</h3>
         <div className="flex flex-wrap gap-2 text-xs">

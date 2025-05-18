@@ -1,7 +1,6 @@
 
 import type { PeriodicElement } from '@/types/element';
 
-// Data adapted from https://github.com/Bowserinator/Periodic-Table-JSON
 export const elements: PeriodicElement[] = [
   {
     "name": "Hydrogen",

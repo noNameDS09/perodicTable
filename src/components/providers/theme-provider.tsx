@@ -19,7 +19,7 @@ interface ThemeProviderState {
 
 const initialState: ThemeProviderState = {
   theme: "system",
-  resolvedTheme: "light", // default to light if no system preference or localStorage
+  resolvedTheme: "light", 
   setTheme: () => null,
 };
 
@@ -63,13 +63,12 @@ export function ThemeProvider({
     applyTheme(theme);
   }, [theme, applyTheme]);
 
-  // Listen to system theme changes if theme is 'system'
   useEffect(() => {
     if (theme !== 'system') return;
 
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = () => {
-      applyTheme('system'); // Re-apply to resolve based on new system preference
+      applyTheme('system'); 
     };
 
     mediaQuery.addEventListener("change", handleChange);

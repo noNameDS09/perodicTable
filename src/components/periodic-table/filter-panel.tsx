@@ -50,7 +50,7 @@ export function FilterPanel({ filters, onFilterChange, onResetFilters }: FilterP
         <div>
           <Label htmlFor="phase-filter" className="text-sm font-medium">Standard State (Phase)</Label>
           <Select
-            value={filters.phase || ""} // Select value can be "" to show placeholder
+            value={filters.phase || ""} 
             onValueChange={(value) => onFilterChange('phase', value === ALL_ITEMS_SENTINEL_VALUE ? "" : value)}
           >
             <SelectTrigger id="phase-filter" className="w-full mt-1">

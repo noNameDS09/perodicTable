@@ -4,14 +4,13 @@
 import type { PeriodicElement } from '@/types/element';
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { ElementInfoCard } from "./element-info-card";
-import { cn, capitalize } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 
 interface ElementTileProps {
   element: PeriodicElement;
   isFilteredOut?: boolean;
 }
 
-// Refined color mapping based on common periodic table conventions
 const categoryColorStyles: Record<string, { bg: string; text: string; border: string }> = {
   "alkali metal": { bg: "bg-red-500", text: "text-white", border: "border-red-700" },
   "alkaline earth metal": { bg: "bg-orange-500", text: "text-white", border: "border-orange-700" },
@@ -42,7 +41,7 @@ export function ElementTile({ element, isFilteredOut = false }: ElementTileProps
     <Popover>
       <PopoverTrigger asChild>
         <div
-          data-cursor-type="element-tile" // Added data attribute
+          data-cursor-type="element-tile" 
           className={cn(
             "group relative flex aspect-square cursor-pointer flex-col items-center justify-center rounded-md border p-1 shadow-md transition-all duration-200 hover:scale-105 hover:shadow-lg hover:z-10",
             style.bg,

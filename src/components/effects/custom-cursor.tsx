@@ -78,7 +78,7 @@ export function CustomCursor() {
       window.removeEventListener('mouseup', handleMouseUp);
       document.removeEventListener('mouseover', handleContextualHover);
     };
-  }, [mouseX, mouseY, cursorVariant]); // Added cursorVariant
+  }, [mouseX, mouseY, cursorVariant]);
 
   if (!isMounted) {
     return null;
@@ -90,7 +90,7 @@ export function CustomCursor() {
       height: 20,
       backgroundColor: "hsla(var(--primary) / 0.15)",
       border: "1px solid hsl(var(--primary))",
-      borderRadius: "9999px", // fully rounded
+      borderRadius: "9999px",
       scale: 1,
       opacity: 0.8,
       transition: { type: "spring", mass: 0.1, stiffness: 300, damping: 20 }
@@ -116,11 +116,11 @@ export function CustomCursor() {
       transition: { type: "spring", mass: 0.15, stiffness: 250, damping: 18 }
     },
     elementHover: {
-      width: hoveredElementDimensions?.width ?? 32, // Fallback size
-      height: hoveredElementDimensions?.height ?? 32, // Fallback size
+      width: hoveredElementDimensions?.width ?? 32, 
+      height: hoveredElementDimensions?.height ?? 32,
       backgroundColor: "hsla(var(--accent) / 0.1)", 
       border: "1.5px solid hsl(var(--accent))",
-      borderRadius: "0.375rem", // Tailwind's rounded-md
+      borderRadius: "0.375rem", 
       scale: 1.0,
       opacity: 0.7,
       transition: { type: "spring", mass: 0.15, stiffness: 350, damping: 25 }

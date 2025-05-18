@@ -10,8 +10,6 @@ interface ElementInfoCardProps {
 export function ElementInfoCard({ element }: ElementInfoCardProps) {
   const getCategoryColorClass = (category: string): string => {
     const categoryFormatted = category.toLowerCase().replace(/\s+/g, '-');
-    // These colors are Tailwind JIT friendly if defined in safelist or used directly
-    // For simplicity, using a few common ones. Real app might need more specific color mappings.
     if (category.includes("alkali")) return "bg-red-400 dark:bg-red-700";
     if (category.includes("alkaline")) return "bg-orange-400 dark:bg-orange-700";
     if (category.includes("lanthanide")) return "bg-purple-400 dark:bg-purple-700";

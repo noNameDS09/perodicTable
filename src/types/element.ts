@@ -17,15 +17,15 @@ export interface PeriodicElement {
   melt: number | null;
   molar_heat: number | null;
   named_by: string | null;
-  number: number; // same as atomic_number
+  number: number; 
   period: number;
-  phase: 'Gas' | 'Solid' | 'Liquid' | 'Unknown'; // Standard state
+  phase: 'Gas' | 'Solid' | 'Liquid' | 'Unknown'; 
   source: string;
   spectral_img: string | null;
   summary: string;
   symbol: string;
-  xpos: number; // Grid column (1-18)
-  ypos: number; // Grid row (1-10)
+  xpos: number; 
+  ypos: number;
   shells: number[];
   bohr_model_image?: string | null;
   block: 's' | 'p' | 'd' | 'f';
